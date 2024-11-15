@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruffle Centered Canvas</title>
+    <script src="ruffle.js"></script> <!-- Make sure this points to your ruffle.js file -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333; /* Background color outside the game canvas */
+        }
+        /* Position the game title in the top-left corner */
+        #game-title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 1.5em;
+            margin: 0;
+            z-index: 10; /* Ensures the title is above other content */
+        }
+        /* Game container */
+        #game-container {
+            width: 800px; /* Normal game size */
+            height: 600px; /* Normal game size */
+            background-color: black; /* Background inside the game container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game Title positioned in the top-left corner -->
+    <h1 id="game-title">My Ruffle Game</h1>
+    
+    <!-- Game Container -->
+    <div id="game-container" data-ruffle-player>
+        <object data="duck-life.swf" width="100%" height="100%"></object>
+    </div>
+
+</body>
+</html>
