@@ -5,4 +5,4 @@ yes you can.
 # can you fork?
 sure. simply dont forget to credit me! (game wasnt made by me)
 # have any issue?
-please let me know in #issue tab
+please let me know in #issues tab
